@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * _isupper - Do something
- * Return: Return something
- * @c: do something
+ *_isupper - Do something
+ *Return: Return something
+ *@c: do something
  */
 int _isupper(int c)
 {
