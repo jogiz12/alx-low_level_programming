@@ -1,1 +1,1 @@
-my read on array
+my read
