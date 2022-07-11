@@ -1,4 +1,4 @@
-#include " main.h "
+#include "main.c"
 /**
  *reset_to_98 - do something
  *@n: do something
