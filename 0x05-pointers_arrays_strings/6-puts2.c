@@ -1,26 +1,18 @@
 #include "main.h"
 /**
- *puts2 - writes every other character
- *@str: input string to print
- *Description: prints every other character of string
- *Return: nothing
+ * puts2 - print alternating chars of string
+ * @str: string
+ * Return: void
  */
 void puts2(char *str)
 {
-int i, j;
+int i;
 i = 0;
-j = 0;
 while (str[i] != '\0')
 {
+if (i % 2 == 0)
+_putchar(str[i]);
 i++;
-}
-while (j < i)
-{
-_putchar(str[j]);
-j += 2;
 }
 _putchar('\n');
 }
-
-
-
