@@ -1,27 +1,15 @@
+#include "main.h"
 #include <stdlib.h>
 /**
- * *create_array - Create dynamic array and initialize with a character
+ * malloc_checked - Allocates memory using malloc.
+ * @b: The number of bytes to be allocated.
  *
- * @size: size of the array
- *
- * @c: char to be initialized with
- *
- * Return: pointer to array or null
- *
- **/
-char *create_array(unsigned int size, char c)
+ * Return: A pointer to the allocated memory.
+ */
+void *malloc_checked(unsigned int b)
 {
-	char *A;
-	unsigned int i = 0;
-	if (size == 0)
-		return (NULL);
-	A = malloc(sizeof(char) * size);
-	if (A == NULL)
-		return (NULL);
-	while (i < size)
-	{
-		A[i] = c;
-		i++;
-	}
-	return (A);
+	void *mem = malloc(b);
+	if (mem == NULL)
+		exit(98);
+	return (mem);
 }
