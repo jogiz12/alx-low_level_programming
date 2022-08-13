@@ -35,10 +35,10 @@ list_t *add_node_end(list_t **head, const char *str)
 	{
 		tmp_n_d = *head;
 		while (tmp_n_d->next)
-			tmp_n_d = tmp_n_d->next
-			{
-				tmp_n_d->next = n_node;
-			}
+			tmp_n_d = tmp_n_d->next;
+		{
+			tmp_n_d->next = n_node;
+		}
 	}
 	return (n_node);
 }
